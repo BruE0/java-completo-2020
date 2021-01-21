@@ -1,2 +1,3 @@
-# java-completo-2020
-Meu código para alguns tutoriais de https://www.udemy.com/course/java-curso-completo/
+# java-completo-2020-composition
+
+Código referente a seção 13: Enumerações, composição.
