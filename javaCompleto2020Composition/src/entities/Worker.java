@@ -11,14 +11,16 @@ public class Worker {
     private WorkerLevel level;
     private double baseSalary;
     private Department department;
-    private List<HourContract> contracts;
+    private List<HourContract> contracts = new ArrayList<>();
 
     public Worker(String name, WorkerLevel level, Department department, double baseSalary) {
         this.name = name;
         this.level = level;
         this.department = department;
         this.baseSalary = baseSalary;
-        this.contracts = new ArrayList<>();
+    }
+    
+    public Worker() {
     }
 
     public void addContract(HourContract contract) {
