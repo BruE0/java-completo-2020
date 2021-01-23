@@ -22,7 +22,7 @@ public class Program {
         for (Product p : products) {
             System.out.println(p.priceTag());
         }
-
+        sc.close();
     }
 
     public static List<Product> getProducts(Scanner sc) {
