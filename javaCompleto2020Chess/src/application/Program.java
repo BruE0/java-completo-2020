@@ -28,6 +28,20 @@ public class Program {
                 ChessPosition target = UI.readChessPosition(sc);
 
                 chessMatch.performChessMove(source, target);
+
+                if (chessMatch.getPromoted() != null) {
+                    System.out.print(UI.ANSI_CYAN
+                            + "Enter piece for promotion (B/N/R/Q) [default = Q]: "
+                            + UI.ANSI_RESET);
+                    String type = sc.nextLine().trim().toUpperCase();
+                    if (type.equals("B") || type.equals("N") || type.equals("R") || type.equals("Q")) {
+                        chessMatch.replacePromotedPiece(type);
+                    } else {
+                        System.out.println("Invalid value! Automatically promoted to Queen");
+                        sc.nextLine();
+                    }
+                }
+
             } catch (ChessException | InputMismatchException e) {
                 System.out.println(e.getMessage());
                 sc.nextLine();
