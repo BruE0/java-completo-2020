@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+import boardgame.Piece;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
@@ -109,10 +110,10 @@ public class UI {
         System.out.print(" ");
     }
 
-    private static void printCapturedPieces(List<ChessPiece> captured) {
-        List<ChessPiece> whites = captured.stream().filter(x -> x.getColor() == Color.WHITE)
+    private static void printCapturedPieces(List<Piece> list) {
+        List<Piece> whites = list.stream().filter(x -> ((ChessPiece) x).getColor() == Color.WHITE)
                 .collect(Collectors.toList());
-        List<ChessPiece> blacks = captured.stream().filter(x -> x.getColor() == Color.BLACK)
+        List<Piece> blacks = list.stream().filter(x -> ((ChessPiece) x).getColor() == Color.BLACK)
                 .collect(Collectors.toList());
         System.out.println(ANSI_WHITE_UNDERLINE + "Captured pieces:" + ANSI_RESET);
         System.out.println("White: " + ANSI_WHITE + whites + ANSI_RESET);
