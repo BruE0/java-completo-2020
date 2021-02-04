@@ -1,4 +1,4 @@
-# java-completo-2020-set-exercicio1
+# java-completo-2020-set-map-exercicio1
 
 Código referente ao exercício 1 de fixação da seção 19: Generics, Set, Map.
 
