@@ -1,9 +1,11 @@
 package application;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
+import model.entities.Department;
 import model.entities.Seller;
 
 public class Program {
@@ -24,5 +26,11 @@ public class Program {
         List<Seller> allSellers = sellerDao.findAll();
         allSellers.forEach(System.out::println);
 
+        System.out.println("\n" + "=".repeat(10) + " TEST 4: seller insert " + "=".repeat(10));
+        Department noNameDep = new Department(2, null);
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", LocalDate.of(2020, 1, 1), 4000.0,
+                noNameDep);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
     }
 }
