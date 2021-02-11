@@ -92,7 +92,7 @@ public class Seller implements Serializable {
         if (getClass() != obj.getClass())
             return false;
         Seller other = (Seller) obj;
-        return id == other.id;
+        return Objects.equals(id, other.id);
     }
 
     @Override
