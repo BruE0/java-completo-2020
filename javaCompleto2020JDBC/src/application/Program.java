@@ -32,12 +32,16 @@ public class Program {
                 noNameDep);
         sellerDao.insert(seller);
         System.out.println("Inserted! New id = " + seller.getId());
-        
+
         System.out.println("\n" + "=".repeat(10) + " TEST 5: seller update " + "=".repeat(10));
         seller = sellerDao.findById(1);
         seller.setName("Martha Wayne");
         sellerDao.update(seller);
-        System.out.println("Update completed!");
-        
+        System.out.println("Update completed! Changed seller to\n" + seller);
+
+        System.out.println("\n" + "=".repeat(10) + " TEST 6: seller delete " + "=".repeat(10));
+        int idToDelete = 8;
+        sellerDao.deleteById(idToDelete);
+        System.out.println("Delete completed. Deleted id = " + idToDelete);
     }
 }
