@@ -8,4 +8,4 @@
 
 Requer terminal que realiza display de cores com códigos de <i>escape</i> ANSI.
 
-<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/javaCompleto2020Chess/sample.png" alt="sample">
+<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/Chess/sample.png" alt="sample">

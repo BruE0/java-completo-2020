@@ -6,4 +6,4 @@ Código referente ao exercício proposto da seção 17: Trabalhando com arquivos
 
 #### Bastante simples mas de qualquer forma foi resolvido.
 
-<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/javaCompleto2020Files/sample.png" alt="sample">
+<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/FilesManipulation/sample.png" alt="sample">

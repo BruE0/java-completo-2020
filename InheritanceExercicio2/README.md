@@ -2,4 +2,4 @@
 
 Código referente ao exercício 2 de fixação da seção 14: Herança e polimorfismo.
 
-<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/javaCompleto2020InheritanceExercicio2/sample.png" alt="sample">
+<image src="https://raw.githubusercontent.com/BruE0/java-completo-2020/master/InheritanceExercicio2/sample.png" alt="sample">
